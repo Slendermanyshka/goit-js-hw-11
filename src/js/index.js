@@ -29,7 +29,7 @@ function onSearchHandler(e) {
 
   searchQuery.value.trim();
 
-  if (searchQuery.value === '') {
+  if (searchQuery.value.trim() === '') {
     return Notify.failure('There is nothing to search!');
   }
 
