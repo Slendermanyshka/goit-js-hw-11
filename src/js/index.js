@@ -39,7 +39,7 @@ function onSearchHandler(e) {
   pixabayApi
     .fetchData()
     .then(data => {
-      if (data.hits.length == 0) {
+      if (data.hits.length === 0) {
         return Notify.failure(
           `Sorry, there are no images matching your search query. Please try again`,
         );
